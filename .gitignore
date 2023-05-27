@@ -5,3 +5,4 @@
 /.vs/EngineA
 /bin/Debug-x64
 /bin-int/Debug-x64
+*.user
