@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace EngineA {
 
 	class ENGINEA_API MouseMovedEvent : public Event

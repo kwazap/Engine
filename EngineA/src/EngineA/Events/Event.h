@@ -1,9 +1,7 @@
 #pragma once
+#include "eapch.h"
 
 #include "EngineA/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace EngineA {
 

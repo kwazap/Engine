@@ -1,3 +1,4 @@
+#include "eapch.h"
 #include "Application.h"
 
 #include "EngineA/Events/ApplicationEvent.h"
@@ -7,7 +8,7 @@ namespace EngineA {
 
 	Application::Application()
 	{
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -17,10 +18,10 @@ namespace EngineA {
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1200, 700);
-		EA_TRACE(e);
-
-		while (true);
+		while (m_Runing)
+		{
+			m_Window->OnUpdate();
+		}
 	}
 
 }
